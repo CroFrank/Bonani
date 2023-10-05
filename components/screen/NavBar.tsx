@@ -12,10 +12,10 @@ export default function NavBar() {
     };
 
     return (
-        <div className="relative bg-components p-4 shadow-lg w-full">
+        <div className="bg-components p-5 shadow-lg w-full sticky top-0 z-50">
             <nav className="flex items-center justify-between">
                 <div className="flex items-center">
-                    <Link href="/" className="text-white text-lg font-bold">BONANI</Link>
+                    <Link href="/" className="text-white text-2xl font-bold">BONANI</Link>
                 </div>
                 <div className="hidden md:flex space-x-4">
                     <Link href="/" className="text-white">Home</Link>

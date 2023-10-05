@@ -2,6 +2,7 @@ import NavBar from '@/components/screen/NavBar'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Martian_Mono } from 'next/font/google'
+import Footer from '@/components/screen/Footer'
 
 const inter = Martian_Mono({ subsets: ['latin'] })
 
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className={`bg-stone-50 ${inter.className}`}>
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   )

@@ -25,31 +25,30 @@ export default function Carousel() {
         };
     }, []);
 
-    if (isSmallScreen) {
+    if (!isSmallScreen) {
         return (
-            <Swiper
-                modules={[Navigation, Pagination, Scrollbar, A11y]}
-                spaceBetween={50}
-                slidesPerView={1}
-                navigation
-                pagination={{ clickable: true }}
-                onSwiper={(swiper) => console.log(swiper)}
-                onSlideChange={() => console.log('slide change')}
-            >
-
-                <SwiperSlide><div className='flex justify-center'><ProductCard src='/basic1.jpg' title='Basic Toppers' content='Don&apos;t let name basic tricks you, they send warm message and make every cake special.' /></div></SwiperSlide>
-                <SwiperSlide><div className='flex justify-center'><ProductCard src='/3D1.jpg' title='3D Toppers' content='Don&apos;t let name basic tricks you, they send warm message and make every cake special.' /></div></SwiperSlide>
-                <SwiperSlide><div className='flex justify-center'><ProductCard src='/special1.jpeg' title='Special Toppers' content='Don&apos;t let name basic tricks you, they send warm message and make every cake special.' /></div></SwiperSlide>
-
-            </Swiper>
+            <div className='flex justify-center'>
+                <ProductCard src='/basic1.jpg' title='Basic Toppers' content='Don&apos;t let name basic tricks you, they send warm message and make every cake special.' />
+                <ProductCard src='/3D1.jpg' title='3D Toppers' content='Don&apos;t let name basic tricks you, they send warm message and make every cake special.' />
+                <ProductCard src='/special1.jpeg' title='Special Toppers' content='Don&apos;t let name basic tricks you, they send warm message and make every cake special.' />
+            </div>
         );
     }
-    return (<div className='flex justify-center'>
-        <ProductCard src='/basic1.jpg' title='Basic Toppers' content='Don&apos;t let name basic tricks you, they send warm message and make every cake special.' />
-        <ProductCard src='/3D1.jpg' title='3D Toppers' content='Don&apos;t let name basic tricks you, they send warm message and make every cake special.' />
-        <ProductCard src='/special1.jpeg' title='Special Toppers' content='Don&apos;t let name basic tricks you, they send warm message and make every cake special.' />
-    </div>
+    return (
+        <Swiper
+            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            spaceBetween={50}
+            slidesPerView={1}
+            navigation
+            pagination={{ clickable: true }}
+            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={() => console.log('slide change')}
+        >
 
+            <SwiperSlide><div className='flex justify-center'><ProductCard src='/basic1.jpg' title='Basic Toppers' content='Don&apos;t let name basic tricks you, they send warm message and make every cake special.' /></div></SwiperSlide>
+            <SwiperSlide><div className='flex justify-center'><ProductCard src='/3D1.jpg' title='3D Toppers' content='Don&apos;t let name basic tricks you, they send warm message and make every cake special.' /></div></SwiperSlide>
+            <SwiperSlide><div className='flex justify-center'><ProductCard src='/special1.jpeg' title='Special Toppers' content='Don&apos;t let name basic tricks you, they send warm message and make every cake special.' /></div></SwiperSlide>
+
+        </Swiper>
     )
-
 };

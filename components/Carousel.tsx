@@ -11,7 +11,7 @@ import ProductCard from './ProductCard';
 import { useEffect, useState } from 'react';
 
 export default function Carousel() {
-    const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
+    const [isSmallScreen, setIsSmallScreen] = useState(false);
 
     useEffect(() => {
         const handleResize = () => {

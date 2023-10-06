@@ -1,15 +1,20 @@
 import Image from "next/image";
 
-export default function ImageCard({ src }: { src: string }) {
+interface ImageCardProps {
+    src: string
+    price: number
+}
+
+export default function ImageCard({ src, price }: ImageCardProps) {
     return (
-        <div className='w-80 h-80'>
+        <>
             <Image
                 src={src}
                 width={400}
                 height={400}
                 alt="welcome image"
                 className="object-cover w-full h-full rounded-2xl" />
-            <p>price: 20€</p>
-        </div>
+            <p className="mb-2">price: {price}€</p>
+        </>
     )
 }

@@ -5,3 +5,9 @@
 .gradient-bg {
     background: conic-gradient(from 45deg, #ffd8f4, #a095fa, #545ea5, #1f2f52);
 }
+
+.swiper-slider {
+    padding: 1.25rem;
+    margin: 1.25rem;
+    border-radius: 1.25rem;
+}

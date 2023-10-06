@@ -46,9 +46,9 @@ export default function NavBar() {
                         </div>
                         <div className="border-t-2 border-white w-full my-4"></div>
                         <div className="flex flex-col justify-center items-start text-white">
-                            <Link href="/" className="p-5 hover:underline">Home</Link>
-                            <Link href="/products" className="p-5 hover:underline">Cake-Toppers</Link>
-                            <Link href="/contact" className="p-5 hover:underline">Contact</Link>
+                            <Link href="/" className="p-5 hover:underline" onClick={() => toggleMenu()}>Home</Link>
+                            <Link href="/products" className="p-5 hover:underline" onClick={() => toggleMenu()}>Cake-Toppers</Link>
+                            <Link href="/contact" className="p-5 hover:underline" onClick={() => toggleMenu()}>Contact</Link>
                         </div>
                     </div>
                 </div>

@@ -6,13 +6,13 @@ export default function Footer() {
         <div className="bg-components p-5 w-full flex flex-col justify-center items-center gap-3 md:flex-row md:justify-between">
             <div className='text-sm flex items-center gap-2'>
                 <LiaCopyrightSolid />
+                2023
                 <span className='font-extrabold'>BONANI</span>All rights reserved
             </div>
             <div className='text-2xl flex justify-start gap-5'>
                 <FaFacebookSquare />
                 <FaInstagramSquare />
                 <FaWhatsappSquare />
-
             </div>
             <div className='flex gap-2 items-center'>
                 <FaArrowCircleRight />

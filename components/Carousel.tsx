@@ -5,7 +5,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
 import ProductCard from './ProductCard';
 import { useEffect, useState } from 'react';
 
@@ -28,7 +27,7 @@ export default function Carousel() {
         <>
             {
                 isSmallScreen ? <Swiper
-                    modules={[Navigation, Pagination, Scrollbar, A11y]}
+                    modules={[Navigation, Pagination]}
                     slidesPerView={1}
                     navigation
                     pagination={{ clickable: true }
@@ -40,8 +39,8 @@ export default function Carousel() {
                 </Swiper > :
                     <div className='flex justify-center'>
                         <ProductCard src='/basic1.jpg' title='Basic Toppers' content='Don&apos;t let name basic tricks you, they send warm message and make every cake special.' />
-                        <ProductCard src='/3D1.jpg' title='3D Toppers' content='Don&apos;t let name basic tricks you, they send warm message and make every cake special.' />
-                        <ProductCard src='/special1.jpeg' title='Special Toppers' content='Don&apos;t let name basic tricks you, they send warm message and make every cake special.' />
+                        <ProductCard src='/3D1.jpg' title='3D Toppers' content='This toppers are made from 2 or more layers which gives them 3D effect and fill every cake with a life energy.' />
+                        <ProductCard src='/special1.jpeg' title='Special Toppers' content='As their name point out, nothig about this topper is usual, they are made for most special occasions.' />
                     </div>
             }
         </>

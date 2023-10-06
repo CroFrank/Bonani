@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { BsArrowRight } from 'react-icons/bs';
 
 interface ProductCardProps {
@@ -18,9 +19,11 @@ export default function ProductCard({ src, title, content }: ProductCardProps) {
                 <h2 className="text-center text-xl pb-3">{title}</h2>
                 <p>{content}</p>
             </div>
-            <div className='flex items-center gap-4 justify-end p-5 hover:text-slate-400 pt-5 underline absolute bottom-0 right-0'>
-                Let&apos;s see
-                <BsArrowRight />
+            <div className='flex items-center justify-end p-5 hover:text-slate-400 pt-5 underline absolute bottom-0 right-0'>
+                <Link href='/products' className='flex items-center gap-4 '>
+                    Let&apos;s see
+                    <BsArrowRight />
+                </Link>
             </div>
         </div>
     )

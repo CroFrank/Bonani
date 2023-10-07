@@ -14,7 +14,7 @@ export default function ImageCard({ src, price }: ImageCardProps) {
                 height={400}
                 alt="welcome image"
                 className="object-cover w-full h-full rounded-2xl" />
-            <p className="mb-2">price: {price}€</p>
+            <p className="p-2 bg-white rounded-xl">price: {price}€</p>
         </>
     )
 }

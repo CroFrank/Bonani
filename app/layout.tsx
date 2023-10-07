@@ -1,8 +1,8 @@
-import NavBar from '@/components/screen/NavBar'
+import NavBar from '@/app/_components/screen/NavBar'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Martian_Mono } from 'next/font/google'
-import Footer from '@/components/screen/Footer'
+import Footer from '@/app/_components/screen/Footer'
 
 const inter = Martian_Mono({ subsets: ['latin'] })
 

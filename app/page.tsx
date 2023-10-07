@@ -1,7 +1,7 @@
-import WelcomeCard from "@/components/WelcomeCard";
+import WelcomeCard from "@/app/_components/WelcomeCard";
 import dynamic from "next/dynamic";
 
-const DynamicCarousel = dynamic(() => import("@/components/Carousel"), {
+const DynamicCarousel = dynamic(() => import("@/app/_components/Carousel"), {
   ssr: false,
   loading: () => <p className="text-3xl text-center">...Loading</p>
 })

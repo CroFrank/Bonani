@@ -10,14 +10,18 @@ export default function Footer() {
                 <span className='font-extrabold'>BONANI</span>All rights reserved
             </div>
             <div className='text-2xl flex justify-start gap-5'>
-                <FaFacebookSquare />
-                <FaInstagramSquare />
+                <a href="https://www.facebook.com/shop.bonani/?locale=hr_HR" target="_blank">
+                    <FaFacebookSquare />
+                </a>
+                <a href="https://www.instagram.com/bonanicraftanddecor/" target="_blank">
+                    <FaInstagramSquare />
+                </a>
                 <FaWhatsappSquare />
             </div>
             <div className='flex gap-2 items-center'>
                 <FaArrowCircleRight />
                 Made by <span className='font-extrabold text-center'>CroFrank</span>
             </div>
-        </div>
+        </div >
     )
 }

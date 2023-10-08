@@ -18,10 +18,10 @@ export default function Footer() {
                 </a>
                 <FaWhatsappSquare />
             </div>
-            <div className='flex gap-2 items-center'>
+            <a href="https://crofrank.github.io/portfolio/" className='flex gap-2 items-center' target="_blank">
                 <FaArrowCircleRight />
                 Made by <span className='font-extrabold text-center'>CroFrank</span>
-            </div>
+            </a>
         </div >
     )
 }

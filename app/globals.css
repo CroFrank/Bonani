@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.gradient-bg {
-    background: conic-gradient(from 45deg, #ffd8f4, #a095fa, #545ea5, #1f2f52);
+:root {
+    --background: conic-gradient(from 45deg, #ffd8f4, #a095fa, #545ea5, #1f2f52)
+}
+
+body {
+    background: var(--background)
 }

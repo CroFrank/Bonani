@@ -8,7 +8,7 @@ const DynamicCarousel = dynamic(() => import("@/app/_components/Carousel"), {
 
 export default function Home() {
   return (
-    <div className="gradient-bg">
+    <div>
       <div className="flex justify-center">
         <main className="lg:max-w-5xl">
           <WelcomeCard />

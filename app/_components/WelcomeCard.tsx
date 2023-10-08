@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Button from "./Button"
 import WelcomeImg from "./WelcomeImg"
 
 export default function WelcomeCard() {
@@ -12,9 +12,7 @@ export default function WelcomeCard() {
                     All cake toppers are precisely designed and handmaded with special care to make <span className="text-components font-semibold">happy</span> everyone who see them.
                 </p>
                 <div>
-                    <Link href='/products' className="border-2 border-components hover:text-white hover:bg-components text-components font-bold py-2 px-4 rounded transition duration-300 ease-in-out">
-                        Explore
-                    </Link>
+                    <Button href={'/products'} content='Explore' />
                 </div>
             </div>
             <WelcomeImg />

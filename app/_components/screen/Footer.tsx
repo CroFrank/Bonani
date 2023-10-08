@@ -3,7 +3,7 @@ import { LiaCopyrightSolid } from 'react-icons/lia'
 
 export default function Footer() {
     return (
-        <div className="bg-components p-5 w-full flex flex-col justify-center items-center gap-3 md:flex-row md:justify-between">
+        <div className="bg-components p-5 w-full flex flex-col justify-center items-center gap-3 md:flex-row md:justify-between mt-auto">
             <div className='text-sm flex items-center gap-2'>
                 <LiaCopyrightSolid />
                 2023

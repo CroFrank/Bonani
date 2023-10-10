@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import ImageCard from '@/app/_components/ImageCard';
-import { data } from '../../data/data'
+import { data } from '../_data/data'
 
 import '.././products/products.css'
 

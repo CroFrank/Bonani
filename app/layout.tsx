@@ -18,9 +18,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} flex flex-col h-screen`}>
         <NavBar />
         {children}
+        <a aria-label="Chat on WhatsApp" href="https://wa.me/+385976785381?text=Hello,%20how%20can%20I%20help%20you" className="fixed bottom-20 right-10">
+          <img alt="Chat on WhatsApp" src="WhatsAppButtonGreenSmall.svg" />
+        </a>
         <Footer />
       </body>
     </html>

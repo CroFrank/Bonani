@@ -11,7 +11,7 @@ const DynamicProductsSwiper = dynamic(() => import("@/app/_components/ProductsSw
 export default function Products() {
     return (
         <>
-            <div className='h-screen flex flex-col items-center justify-start'>
+            <div className='flex flex-col items-center justify-start'>
                 <h2 className="text-4xl font-bold text-yellow-100 py-20">
                     Cake Toppers
                 </h2>

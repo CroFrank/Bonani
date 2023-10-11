@@ -18,9 +18,9 @@ export default function NavBar() {
                     <Link href="/" className="text-white text-2xl font-bold">BONANI</Link>
                 </div>
                 <div className="hidden md:flex space-x-4">
-                    <Link href="/" className="text-white">Home</Link>
-                    <Link href="/products" className="text-white">Cake-Toppers</Link>
-                    <Link href="/contact" className="text-white">Contact</Link>
+                    <Link href="/" className="text-slate-600 hover:underline hover:text-slate-500">Home</Link>
+                    <Link href="/products" className="text-slate-600 hover:underline hover:text-slate-500">Cake-Toppers</Link>
+                    <Link href="/contact" className="text-slate-600 hover:underline hover:text-slate-500">Contact</Link>
                 </div>
                 <div className="md:hidden flex items-center">
                     <button
@@ -46,9 +46,9 @@ export default function NavBar() {
                         </div>
                         <div className="border-t-2 border-white w-full my-4"></div>
                         <div className="flex flex-col justify-center items-start text-white">
-                            <Link href="/" className="p-5 hover:underline" onClick={() => toggleMenu()}>Home</Link>
-                            <Link href="/products" className="p-5 hover:underline" onClick={() => toggleMenu()}>Cake-Toppers</Link>
-                            <Link href="/contact" className="p-5 hover:underline" onClick={() => toggleMenu()}>Contact</Link>
+                            <Link href="/" className="p-5 text-slate-600 hover:underline hover:text-slate-500" onClick={() => toggleMenu()}>Home</Link>
+                            <Link href="/products" className="p-5 text-slate-600 hover:underline hover:text-slate-500" onClick={() => toggleMenu()}>Cake-Toppers</Link>
+                            <Link href="/contact" className="p-5 text-slate-600 hover:underline hover:text-slate-500" onClick={() => toggleMenu()}>Contact</Link>
                         </div>
                     </div>
                 </div>

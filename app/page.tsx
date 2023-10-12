@@ -1,14 +1,14 @@
-import WelcomeCard from '@/app/_components/WelcomeCard';
-import dynamic from 'next/dynamic';
+import WelcomeCard from '@/app/_components/WelcomeCard'
+import dynamic from 'next/dynamic'
 
 const DynamicCarousel = dynamic(() => import('@/app/_components/Carousel'), {
   ssr: false,
   loading: () => <p className="text-center text-3xl">...Loading</p>,
-});
+})
 
 export default function Home() {
   return (
-    <div>
+    <div className="flex-grow">
       <div className="flex justify-center">
         <main className="lg:max-w-5xl">
           <WelcomeCard />
@@ -16,5 +16,5 @@ export default function Home() {
       </div>
       <DynamicCarousel />
     </div>
-  );
+  )
 }

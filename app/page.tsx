@@ -1,10 +1,10 @@
-import WelcomeCard from "@/app/_components/WelcomeCard";
-import dynamic from "next/dynamic";
+import WelcomeCard from '@/app/_components/WelcomeCard';
+import dynamic from 'next/dynamic';
 
-const DynamicCarousel = dynamic(() => import("@/app/_components/Carousel"), {
+const DynamicCarousel = dynamic(() => import('@/app/_components/Carousel'), {
   ssr: false,
-  loading: () => <p className="text-3xl text-center">...Loading</p>
-})
+  loading: () => <p className="text-center text-3xl">...Loading</p>,
+});
 
 export default function Home() {
   return (
@@ -16,5 +16,5 @@ export default function Home() {
       </div>
       <DynamicCarousel />
     </div>
-  )
+  );
 }

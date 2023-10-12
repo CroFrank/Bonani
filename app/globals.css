@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 :root {
-    --background: conic-gradient(from 45deg, #ffd8f4, #a095fa, #545ea5, #1f2f52)
+  --background: conic-gradient(from 45deg, #ffd8f4, #a095fa, #545ea5, #1f2f52);
 }
 
 body {
-    background: var(--background) no-repeat;
-    height: 100%
+  background: var(--background) no-repeat;
+  height: 100%;
 }

@@ -1,15 +1,17 @@
-import Link from "next/link";
+import Link from 'next/link'
 
 interface ButtonProps {
-    href: string
-    content: string
+  href: string
+  content: string
 }
 
-export default function Button({ href, content }: ButtonProps) {
-    return (
-        <Link href={href} className="border-2 border-components hover:text-white hover:bg-components text-components font-bold py-2 px-4 rounded transition duration-300 ease-in-out">
-            {content}
-        </Link>
-    )
-
+export function Button({ href, content }: ButtonProps) {
+  return (
+    <Link
+      href={href}
+      className="rounded border-2 border-components px-4 py-2 font-bold text-components transition duration-300 ease-in-out hover:bg-components hover:text-white"
+    >
+      {content}
+    </Link>
+  )
 }

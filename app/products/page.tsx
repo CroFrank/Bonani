@@ -20,7 +20,7 @@ export default function Products() {
           Cake Toppers
         </h2>
         <DynamicProductsSwiper />
-        <div className="mt-24">
+        <div className="mt-20 py-10 px-3">
           <Button href="/contact" content="Get your Topper now!" />
         </div>
       </div>

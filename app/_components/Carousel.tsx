@@ -32,6 +32,7 @@ export default function Carousel() {
           slidesPerView={1}
           navigation
           pagination={{ clickable: true }}
+          className="my-10"
         >
           <SwiperSlide>
             <div className="flex justify-center">

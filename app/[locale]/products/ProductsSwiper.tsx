@@ -1,14 +1,15 @@
 'use client'
 
-import ImageCard from '@/app/_components/ImageCard'
 import 'swiper/css'
 import 'swiper/css/effect-coverflow'
 import 'swiper/css/pagination'
 import { EffectCoverflow, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
-import '.././products/products.css'
+import { ImageCard } from '@components'
+
 import { data } from '../_data/data'
+import './products.css'
 
 export default function ProductsSwiper() {
   return (

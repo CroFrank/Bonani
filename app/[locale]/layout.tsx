@@ -1,10 +1,11 @@
-import Footer from '@/app/_components/screen/Footer'
-import NavBar from '@/app/_components/screen/NavBar'
+import Footer from '@/app/[locale]/_components/screen/Footer'
+import NavBar from '@/app/[locale]/_components/screen/NavBar'
 import type { Metadata } from 'next'
+import { useLocale } from 'next-intl'
 import { Martian_Mono } from 'next/font/google'
 import Image from 'next/image'
+import { notFound } from 'next/navigation'
 
-import './globals.css'
 import './globals.css'
 
 const inter = Martian_Mono({ subsets: ['latin'] })
@@ -16,13 +17,19 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  params,
 }: {
   children: React.ReactNode
+  params: { locale: string }
 }) {
+  const locale = useLocale()
+  if (params.locale !== locale) {
+    notFound()
+  }
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={`${inter.className} flex flex-col min-h-screen`}>
-        <NavBar />
+        <NavBar lang={params.locale} />
         {children}
         <a
           aria-label="Chat on WhatsApp"

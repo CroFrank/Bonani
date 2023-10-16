@@ -5,7 +5,7 @@ interface ImageCardProps {
   price: number
 }
 
-export default function ImageCard({ src, price }: ImageCardProps) {
+export function ImageCard({ src, price }: ImageCardProps) {
   return (
     <>
       <Image

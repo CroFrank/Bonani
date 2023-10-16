@@ -50,6 +50,7 @@ export default function Contact() {
           width="100%"
           height="100%"
           loading="lazy"
+          className="pb-10"
         ></iframe>
       </div>
     </div>

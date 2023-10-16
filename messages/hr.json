@@ -1,0 +1,13 @@
+{
+  "welcomecard": {
+    "title": "Čudesan svijet",
+    "titlespan": "Cake Toppera",
+    "content1": "Svi cake topperi su pažljivo dizajnirani i precizno napravljeni kako bi",
+    "contentspan": "usrećili",
+    "content2": "svakoga tko ih vidi.",
+    "btn": "Istraži"
+  },
+  "welcomeimg": {
+    "content": "Bok, ja sam Bojana"
+  }
+}

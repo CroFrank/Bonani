@@ -20,9 +20,15 @@
     ],
     "paths": {
       "@/*": ["./*"],
-      "@components": ["./app/_components"]
+      "@components": ["./app/[locale]/_components"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "app/[locale]/_components/screen/NavBar.jsx"
+  ],
   "exclude": ["node_modules"]
 }

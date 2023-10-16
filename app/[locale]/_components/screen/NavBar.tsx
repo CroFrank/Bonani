@@ -1,10 +1,14 @@
 'use client'
 
-import Link from 'next/link'
-import React, { useState } from 'react'
+import { createSharedPathnamesNavigation } from 'next-intl/navigation'
+import { useState } from 'react'
 import { FaXmark } from 'react-icons/fa6'
 
-export default function NavBar() {
+export const locales = ['en', 'hr'] as const
+
+export const { Link } = createSharedPathnamesNavigation({ locales })
+
+export default function NavBar({ lang }: { lang: string }) {
   const [isMenuVisible, setMenuVisible] = useState(false)
 
   const toggleMenu = () => {
@@ -38,6 +42,31 @@ export default function NavBar() {
           >
             Contact
           </Link>
+          <div>
+            <button
+              className={
+                lang === 'en'
+                  ? 'font-bold text-slate-700 hover:text-slate-500 hover:underline'
+                  : 'text-slate-600 hover:text-slate-500 hover:underline'
+              }
+            >
+              <Link href="/" locale="en">
+                EN
+              </Link>
+            </button>
+            /
+            <button
+              className={
+                lang === 'hr'
+                  ? 'font-bold text-slate-700 hover:text-slate-500 hover:underline'
+                  : 'text-slate-600 hover:text-slate-500 hover:underline'
+              }
+            >
+              <Link href="/" locale="hr">
+                HR
+              </Link>
+            </button>
+          </div>
         </div>
         <div className="flex items-center md:hidden">
           <button
@@ -99,6 +128,31 @@ export default function NavBar() {
               >
                 Contact
               </Link>
+              <div className="p-5 text-slate-600">
+                <button
+                  className={
+                    lang === 'en'
+                      ? 'font-bold  text-slate-700 hover:text-slate-500 hover:underline'
+                      : ' text-slate-600 hover:text-slate-500 hover:underline'
+                  }
+                >
+                  <Link href="/" locale="en">
+                    EN
+                  </Link>
+                </button>
+                /
+                <button
+                  className={
+                    lang === 'hr'
+                      ? 'font-bold  text-slate-700 hover:text-slate-500 hover:underline'
+                      : ' text-slate-600 hover:text-slate-500 hover:underline'
+                  }
+                >
+                  <Link href="/" locale="hr">
+                    HR
+                  </Link>
+                </button>
+              </div>
             </div>
           </div>
         </div>

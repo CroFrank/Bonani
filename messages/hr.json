@@ -1,10 +1,12 @@
 {
-  "welcomecard": {
-    "title": "Čudesan svijet",
-    "titlespan": "Cake Toppera",
-    "content1": "Svi cake topperi su pažljivo dizajnirani i precizno napravljeni kako bi",
-    "contentspan": "usrećili",
-    "content2": "svakoga tko ih vidi.",
+  "banner": {
+    "title": "Čarobni sastojak svake torte",
+    "text1": "Specijalizirana proizvodnja",
+    "text-bold": "Cake Toppera,",
+    "text2": "ali slušamo Vaše želje",
+    "span1": "Brza izrada",
+    "span2": "Personalizirano",
+    "span3": "Ručni rad",
     "btn": "Istraži"
   },
   "welcomeimg": {

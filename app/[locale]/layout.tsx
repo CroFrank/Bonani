@@ -28,24 +28,26 @@ export default function RootLayout({
   }
   return (
     <html lang={locale}>
-      <body className={`${inter.className} flex flex-col min-h-screen`}>
-        <NavBar lang={params.locale} />
-        {children}
-        <a
-          aria-label="Chat on WhatsApp"
-          href="https://wa.me/+385976785381?text=Hello,%20how%20can%20I%20help%20you"
-          className="fixed bottom-20 right-10 z-40"
-          target="blank"
-        >
-          <Image
-            alt="Chat on WhatsApp"
-            src="/whatsapp-logo.png"
-            width={50}
-            height={50}
-            className="hover:w-10"
-          />
-        </a>
-        <Footer />
+      <body>
+        <div className={`${inter.className} flex flex-col min-h-screen`}>
+          <NavBar lang={params.locale} />
+          {children}
+          <a
+            aria-label="Chat on WhatsApp"
+            href="https://wa.me/+385976785381?text=Hello,%20how%20can%20I%20help%20you"
+            className="fixed bottom-20 right-10 z-40"
+            target="blank"
+          >
+            <Image
+              alt="Chat on WhatsApp"
+              src="/whatsapp-logo.png"
+              width={50}
+              height={50}
+              className="hover:w-10"
+            />
+          </a>
+          <Footer />
+        </div>
       </body>
     </html>
   )

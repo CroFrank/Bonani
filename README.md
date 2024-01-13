@@ -1,3 +1,3 @@
-Website for Bonani craft production where best cake toppers are made.
+Project I started but never finished because I decided to shift it from Nextjs to Astro.
 
-Link to the page: https://bonani.vercel.app/
+You can check finished version in [bonani-shop](https://github.com/CroFrank/bonani-shop) repository
